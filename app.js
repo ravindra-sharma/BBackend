@@ -3,7 +3,7 @@ var cors = require('cors');
 
 var app = express();
 
-app.use(express.static(__dirname + '\\public\\'))
+app.use(express.static(__dirname + '/public/'))
 app.use(cors())
 
 app.get('/',function(req,res){
