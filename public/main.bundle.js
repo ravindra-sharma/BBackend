@@ -17,17 +17,17 @@ webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
 
 /***/ }),
 
-/***/ "./src/app/app.component.css":
-/***/ (function(module, exports) {
-
-module.exports = ""
-
-/***/ }),
-
 /***/ "./src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<!--The content below is only a placeholder and can be replaced.-->\n<div style=\"text-align:center\">\n  <h1>\n    Welcome to {{ title }}!\n  </h1>\n  <img width=\"300\" alt=\"Angular Logo\" src=\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==\">\n</div>\n<h2>Here are some links to help you start: </h2>\n<ul>\n  <li>\n    <h2><a target=\"_blank\" rel=\"noopener\" href=\"https://angular.io/tutorial\">Tour of Heroes</a></h2>\n  </li>\n  <li>\n    <h2><a target=\"_blank\" rel=\"noopener\" href=\"https://github.com/angular/angular-cli/wiki\">CLI Documentation</a></h2>\n  </li>\n  <li>\n    <h2><a target=\"_blank\" rel=\"noopener\" href=\"https://blog.angular.io/\">Angular blog</a></h2>\n  </li>\n</ul>\n\n"
+module.exports = "<div class=\"header\">\n  <h2 class=\"heading\">Exam Alert</h2>\n  <div class=\".navbar-container\">\n    <div class=\"nav-bar\">\n      <ul class=\"nav-list\">\n        <li><a>Home</a></li>\n        <li><a>Results</a></li>\n        <li><a>Govt.Exams</a></li>\n        <li><a>AboutUs</a></li>\n      </ul>\n    </div>\n  </div>\n</div>\n<div class=\"row\">\n  <div class=\"leftcolumn\">\n    <div class=\"card\">\n      <h2>TITLE HEADING</h2>\n      <h5>Title Description 04 Apr, 2019</h5>\n      <div class=\"fakeimg\">Image</div>\n      <p>Some Text...</p>\n    </div>\n    <div class=\"card\">\n      <h2>TITLE HEADING</h2>\n      <h5>Title Description 04 Apr, 2019</h5>\n      <div class=\"fakeimg\">Image</div>\n      <p>Some Text...</p>\n    </div>\n  </div>\n  <div class=\"rightcolumn\">\n    <div class=\"card\">\n      <h2>About Me</h2>\n      <div class=\"fakeimg\" style=\"height:100px;\">Image</div>\n      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>\n    </div>\n    <div class=\"card\">\n      <h3>Popular Post</h3>\n      <div class=\"fakeimg\">Image</div><br>\n      <div class=\"fakeimg\">Image</div><br>\n      <div class=\"fakeimg\">Image</div>\n    </div>\n    <div class=\"card\">\n      <h3>Follow Me</h3>\n      <p>Some text..</p>\n    </div>\n  </div>\n</div>\n<div class=\"footer\">\n  <h2>Footer</h2>\n</div>\n<h2>Here are some links to help you start: </h2>"
+
+/***/ }),
+
+/***/ "./src/app/app.component.scss":
+/***/ (function(module, exports) {
+
+module.exports = ".header {\n  padding: 30px;\n  font-size: 40px;\n  text-align: center;\n  background: #008080; }\n  .header .heading {\n    margin: 0 0 25px 0; }\n  .leftcolumn {\n  width: 75%;\n  float: left; }\n  .rightcolumn {\n  width: 25%;\n  float: right;\n  padding-left: 20px; }\n  .card {\n  background-color: white;\n  padding: 20px;\n  margin-top: 20px; }\n  .fakeimg {\n  background-color: #aaa;\n  padding: 20px;\n  width: 100%;\n  height: 200px; }\n  .row::after {\n  content: '';\n  display: table;\n  clear: both; }\n  .footer {\n  padding: 20px;\n  text-align: center;\n  background: #ddd;\n  margin-top: 20px; }\n  .nav-list {\n  list-style-type: none;\n  min-width: 696px;\n  padding-top: 20px;\n  margin: 0; }\n  .nav-list li {\n    display: inline; }\n  .nav-list li a {\n      text-decoration: none;\n      padding: 0 10px 0 10px; }\n  .nav-bar {\n  display: table;\n  margin: 0 auto; }\n  .navbar-container {\n  height: 84px; }\n  @media screen and (max-width: 800px) {\n  .leftcolumn, .rightcolumn {\n    width: 100%;\n    padding: 0; } }\n"
 
 /***/ }),
 
@@ -52,7 +52,7 @@ var AppComponent = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'app-root',
             template: __webpack_require__("./src/app/app.component.html"),
-            styles: [__webpack_require__("./src/app/app.component.css")]
+            styles: [__webpack_require__("./src/app/app.component.scss")]
         })
     ], AppComponent);
     return AppComponent;
